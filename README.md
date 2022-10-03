@@ -1,56 +1,26 @@
-# Practical Git Operations:
+# Assignment Answers:
 
-## Creating a New Repo:
+## Task 1: 15 Basic Git Commands:
+
 ```bash
-echo "# git-test" >> README.md
-
-# Create Git Repo
-git init
-
-# Add file for Tracking
-git add README.md 
-
-# Add to Staging area
-git commit -m "first commit" 
-
-# Create a new main branch
-git branch -M main
-
-# Add remote repo as 'Origin'
-git remote add origin https://github.com/Samm-G/git-test.git
-
-# See the remotes..
+git status
 git remote -v
+git add .
+git commit -m "Commiting with images"
+git push origin main
+git branch -a
+git checkout dev1
 
-# Push to Remote.
-git push -u origin main
-```
+git fetch
+git pull origin main
+git merge dev-sam
+git clone https://github.com/Samm-G/git-test.git
 
-## Add an Existing Repo:
-```bash
-git remote add origin https://github.com/Samm-G/git-test.git
-git branch -M main
-git push -u origin main
-```
+git clean
+git log
+git revert
+git diff
+git stash
 
-## Git Configurations:
-List All Git Configs
-```bash
-git config -l
-```
-Set Basic Git Configs:
-```bash
-git config --global user.name "Samm-G"
-git config --global user.email "gsamarth97@gmail.com"
-```
 
-## Git Branches:
-```bash
-# Create branch 
-git branch dev1
-
-# Change Branch to main
-git checkout main
-
-# This line is on Dev1 Branch
 ```
