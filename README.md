@@ -11,8 +11,8 @@ git push origin main
 git branch -a
 git checkout dev1
 
-git fetch
 git pull origin main
+git fetch
 git merge dev-sam
 git clone https://github.com/Samm-G/git-test.git
 
